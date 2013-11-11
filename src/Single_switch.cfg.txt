@@ -1,0 +1,15 @@
+[{switch,switch1,
+         {dict,2,16,16,8,80,48,
+               {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+               {{[],
+                 [[host1|switch1_to_host1]],
+                 [[host2|switch1_to_host2]],
+                 [],[],[],[],[],[],[],[],[],[],[],[],[]}}},
+         {ingress,[{switch1_ingress}]},
+         {egress,[{switch1_to_host1,host1_ingress,{0.4 ,100000000,0}},
+                  {switch1_to_host2,host2_ingress,{0,1000000,0}}]}},
+{host,host1,host1_ingress,
+       {egress,[{host1_to_switch1,switch1_ingress,{0,1000000,0}}]}},
+{host,host2,host2_ingress,
+       {egress,[{host2_to_switch1,switch1_ingress,{0,1000000,0}}]}}].
+

@@ -1,0 +1,11 @@
+{application,emulator,
+             [{description,"simulator emultor emulator or emulator smulator..  "},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{emulator_app,[]}},
+              {env,[]},
+              {modules,[br,bw_req,bw_test,egress_port,emulator_app,
+                        emulator_sup,host_ingress_port,host_supervisor,
+                        ingress_port,main_supervisor,ping,ping_mm1,ping_old,
+                        switch_supervisor,tap_owner]}]}.

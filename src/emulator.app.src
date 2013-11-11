@@ -1,0 +1,12 @@
+{application, emulator,
+ [
+  {description, "simulator emultor emulator or emulator smulator..  "},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { emulator_app, []}},
+  {env, []}
+ ]}.
